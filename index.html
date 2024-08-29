@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Hand Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body onload="welcome();">
+  <div class="container">
+  
+    <center>
+    <h1 class="btn btn-outline-info" id="title">Hand Gestures<br>
+    <span> 🤙 👍 🤚 👏 💪 👌</span> 
+    </h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate hand gesture
+      	<br>
+        <b >👍 Thumbs up</b>
+        <br>
+        <b>🤚 Wave</b>
+        <br>
+        <b>🤙 Call Me</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="view">Webcam View - </label>
+        <br><br>
+       <div id="camera">
+       </div>
+       <br><br>
+       <!--Add  onclick="take_snapshot();"  -->
+       <button class="btn btn-outline-warning button" onclick="take_snapshot()" >Capture Image</button>
+      </div>
+
+
+
+       
+
+       <div class="col-md-4 col-sm-12 col-xs-12">
+
+       <label class="view">Prediction 1 - </label>
+       <p class="gesture name" id="result_gesture_name"></p>
+       <p class="gesture" id="update_gesture"></p>
+       <br><br>
+       <label class="view">Prediction 2 - </label>
+       <p class="gesture name" id="result_gesture_name2"></p>
+       <p class="gesture" id="update_gesture2"></p>
+       <br><br>
+      </div>
+
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="view">Snapshot - </label>
+
+        <br><br>
+
+        <div id="result"></div>
+        <!--Add   onclick="check();"   -->
+<br><br>
+        <button  class="btn btn-outline-success button" onclick="check()">Predict Gesture</button>
+      
+</div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

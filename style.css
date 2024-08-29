@@ -1,0 +1,59 @@
+body
+{
+  color: white;
+background: crimson;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name ,#result_gesture_name2  
+{
+  color: black;
+}
+.gesture_name
+{
+  font-size: 40px;
+}
+.gesture
+{
+  font-size:48px;
+}
+
+#title{
+  font-size: 20px;
+  letter-spacing: 10px;
+  border-radius: 15px;
+}
+
+.view{
+  background-color: orchid;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.view:hover{
+    background-color: rgb(168, 85, 165);
+    color: white;
+}
+
+#captured_image{
+  width: 350;
+  height: 260;
+  margin-top: 20px;
+  
+}
+.button{
+  border-width: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 14px;
+}
